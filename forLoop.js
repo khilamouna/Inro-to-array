@@ -6,6 +6,7 @@ function sumOfN(n) {
   }
   return res;
 }
+console.log(sumOfN(5));
 
 2; //
 function factorialOfN(n) {
@@ -19,6 +20,7 @@ function factorialOfN(n) {
 function repeatString(string, num) {
   var str = "";
   for (var i = 0; num > 0; num--) {
+    cd;
     str += string;
   }
   return str;

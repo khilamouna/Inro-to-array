@@ -57,3 +57,63 @@ function stringsArray() {
 function arrayLength(array) {
   return arr.length;
 }
+//More parctice
+//1
+function firstElement(arr) {
+  return arr[0];
+}
+//2
+function lastElement(arr) {
+  return arr[arr.length - 1];
+}
+//3
+function getNthElement(arr, n) {
+  return arr[n];
+}
+//4
+function push(arr, element) {
+  arr.push(element);
+  return arr;
+}
+//5
+function pop(arr) {
+  const newArray = arr.slice();
+  newArray.pop();
+  return newArray;
+}
+//6
+function unshift(array, element) {
+  const newArray = array.slice();
+  newArray.unshift(element);
+  return newArray;
+}
+//7
+function shift(array) {
+  const newArray = array.slice();
+  newArray.shift();
+  return newArray;
+}
+//8
+function reassignLast(arr, element) {
+  const newArray = arr.slice();
+  newArray[newArray.length - 1] = element;
+  return newArray;
+}
+//9
+function reassignNthElement(arr, index, element) {
+  const newArray = arr.slice();
+  newArray[index] = element;
+  return newArray;
+}
+
+//Advanced
+
+//1
+
+function indexOf(array, element) {
+  return array.indexOf(element);
+}
+
+function concatArrays(array1, array2) {
+  return array1.concat(array2);
+}
