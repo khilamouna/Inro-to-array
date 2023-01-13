@@ -35,3 +35,23 @@ function addProprity(obect, key) {
 function deleteProprity(object, key) {
   delete object[key];
 }
+//8
+function addObjectProprity(obect1, key, object2) {
+  object1[key] = object2;
+}
+//9
+function addFullNameProprity(object) {
+  if (object.hasOwnProperty("firstName") && object.hasOwnProperty("lastName")) {
+    object.fullName = object.firstName + " " + object.lastName;
+  }
+}
+//10
+function addArrayProperty(object, key, array) {
+  object[key] = array;
+}
+//11
+function printAllProperties(object) {
+  for (var key in object) {
+    console.log(object[key]);
+  }
+}
