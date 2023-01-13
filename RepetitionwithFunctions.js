@@ -16,6 +16,14 @@ function sum(number) {
   }
   return total;
 }
+//or
+function sum(num) {
+  if (num === 0) {
+    return 0;
+  }
+  return num + sum(num - 1);
+}
+
 //2
 function factorial(number) {
   var res = 1;
@@ -59,4 +67,33 @@ function multiplyBy10(firstNumber, secondNumber) {
     return firstNumber;
   }
   return (num = multiplyBy10(firstNumber * 10, secondNumber - 1));
+}
+//More Practice
+//1
+function sumBetween(start, end) {
+  if (start > end) {
+    [start, end] = [end, start];
+  }
+  if (end === start) {
+    return start;
+  }
+  return start + sumBetween(start + 1, end);
+}
+
+//2
+function add(number1, number2) {
+  if (number2 === 0) {
+    return number1;
+  }
+  return add(++number1, --number2);
+}
+//3
+function isEven(num) {
+  if (num === 0) {
+    return true;
+  }
+  if (num === 1) {
+    return false;
+  }
+  return isEven(num - 2);
 }
